@@ -18,4 +18,6 @@ Service Certificates
 
 -Configuration in base next js
 
+-Future coding add in QR and certificates
+
 -Dependencies pack.json
