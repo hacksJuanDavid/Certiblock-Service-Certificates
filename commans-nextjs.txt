@@ -1,0 +1,81 @@
+//Dependencies use NEXT.JS
+npn > 12 
+yarn
+
+//Previous use manage tecnologies 
+javascript
+typescript
+node
+
+
+//Commans use create proyect NEXT.JS
+mkdir useNextJS
+ls 
+cd useNextJS
+npm init -y 
+yarn --version 
+yarn add next react react-dom
+
+
+//Add in package.json use next functionation
+Correr con yarn  y probar si esta funcionando next.js
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+
+
+//Types routes in next js
+Stactis : /home /contac 
+
+Dynamic : /user/pablo 
+
+//Routing based 
+pages/
+index.js //Static
+file system
+
+//Routin Dynamic 
+product
+[productId].js
+
+//Under The hood
+Optimizacion de next.js para las paginas ocultas
+crear un build optimo para produccion, esta pensado en la reutilizacion de elementos,
+en otra parte crea chunks para optimizar con el fin de generar hask de carga mas rapidos. 
+
+//Command
+yarn build
+
+Example:
+yarn run v1.22.19
+warning ../../../package.json: No license field
+$ next build
+info  - Linting and checking validity of types  
+info  - Creating an optimized production build  
+info  - Compiled successfully
+info  - Collecting page data  
+[    ] info  - Generating static pages (0/8){}
+{}
+{}
+info  - Generating static pages (8/8)
+info  - Finalizing page optimization  
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      550 B          77.7 kB
+├ ○ /404                                   194 B          77.4 kB
+├ ○ /about                                 297 B          77.5 kB
+├ ○ /button                                275 B          77.5 kB
+├ ○ /ExternalPag                           448 B          77.6 kB
+├ ○ /ExternalPag/comments/[commestsId]     375 B          77.6 kB
+└ ○ /ExternalPag/product/[productId]       359 B          77.5 kB
++ First Load JS shared by all              77.2 kB
+  ├ chunks/framework-7dc8a65f4a0cda33.js   45.2 kB
+  ├ chunks/main-18053c3f67c4d467.js        31 kB
+  ├ chunks/pages/_app-dc14f8483464b560.js  201 B
+  └ chunks/webpack-69bfa6990bb9e155.js     769 B
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+
+
